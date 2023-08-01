@@ -1,0 +1,100 @@
+//hashmap
+map<String,Integer> hm=new HashMap<>();
+map<String,Integer> hm=new HashMap<>();
+hm.put("ghi",3);
+hm.put("abc",1);
+hm.put("def",2);
+//when we try to print the hashmap then it pritn in random order
+sysout(hm);
+for(Map.Entry<String,Integer> e:hm.entrySet()){
+
+    System.out.println(e);
+    System.out.println(e.getKey());
+    System.out.println(e.getValue());
+
+}
+
+for(String e: hm.keySet()){
+    System.out.println(e+" ");
+}
+for(Integer e: hm.values()){
+    System.out.println(e+" ");
+}
+
+/*
+method:
+
+put()
+putIfAbsent()
+containsKey()
+containsValue()
+isEmpty()
+map.put(a[i],getorDefault(a[0],0)+1);
+
+ 
+
+
+
+
+
+*/
+
+
+
+
+
+// treeMap
+map<String,Integer> tm=new TreeMap<>();
+tm.put("abc",1);
+tm.put("def",2);
+tm.put("ghi",3);
+sysout(tm);
+//when we try to print the Treemap then it pritn in the element in sorted order of increasing
+// to the value of key value pairs 
+
+/*
+
+method:
+remove()
+ 
+
+
+
+
+
+
+*/
+
+
+
+
+//Arrays class
+
+int arr[]={11,2,3,5,9,12};
+
+//quick sort
+Arrays.sort(arr);
+Arrays.binarySearch(arr,1);
+Arrays.fill(arr,0);
+
+
+
+//Collections class
+
+List<Integer> list=new ArrayList<>();
+
+
+list.add(5);
+list.add(1);
+list.add(35);
+list.add(54);
+list.add(53);
+list.add(53);
+list.add(53);
+
+int min=Collections.min(list);
+int max=Collections.max(list);
+int freq=Collections.frequency(list,53);
+
+Collections.sort(list);
+Collections.sort(list,Comparator.reverseOrder());

@@ -14,6 +14,30 @@ public class BinarySearchTree {
 
     static class BST{
 
+        //inoder sucessor of some data in bst
+        public Node inorderSuccessor(Node root,Node x)
+         {
+          //add code here.
+          
+          
+              Node ans=null;
+              
+              while(root != null){
+                  if(root.data <= x.data){
+                      //we will seek for the inorder sucessor of x so we move to the right path of bst
+                      root=root.right;
+                  }
+                  else{
+                      ans=root;
+                      root=root.left;
+                  }
+              }
+              
+              return ans;
+          
+          
+         }
+
 
         public static Node CreateInBst(int data,Node root){
 

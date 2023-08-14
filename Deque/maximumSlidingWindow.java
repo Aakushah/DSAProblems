@@ -24,6 +24,8 @@ public class maximumSlidingWindow {
                 ans.add(pq.peek());
 
 
+
+                // check and remove the element which are out of this window and priorityQueue
                 pq.remove(arr[i-k+1]);
 
             }
@@ -90,7 +92,7 @@ public class maximumSlidingWindow {
 
         maximumSlidingWindowUsingArrayDeque(arr,k);
 
-        //ans=[4,5,5,5,3,3,3,2,5]
+        
 
         // maximumSlidingWindowUsingPriorityQueue(arr,k);
 

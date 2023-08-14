@@ -1,8 +1,7 @@
+package Recursion.PrintPermutation;
 
-
-public class FindLargestSubarrayWithEqualNoOfZeroNdOne {
+public class PrintPermutation {
     public static void main(String[] args) {
-        
         
     }
     

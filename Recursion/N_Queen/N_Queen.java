@@ -1,7 +1,8 @@
 
+public class N_Queen {
 
-public class FindLargestSubarrayWithEqualNoOfZeroNdOne {
     public static void main(String[] args) {
+
         
         
     }
